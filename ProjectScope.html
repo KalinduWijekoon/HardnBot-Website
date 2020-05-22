@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="assets/img/toplogo.png" type="image/x-icon" />
+  <title>Project Scope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HardnBot-Research-Website" />
+  <meta name="author" content="Kalindu-Wijekoon" />
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+  <link href="assets/css/animate.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Roboto+Condensed:400,300,700" rel="stylesheet" />
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/color/default.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  <header>
+    <!-- start top -->
+    <div id="topnav" class="navbar navbar-fixed-top default">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+          </div>
+          <div class="navigation">
+            <nav>
+              <ul class="nav pull-right">
+                <li><a href="index.html" class="external">Go Back</a></li>
+                <li><a href="#intro">Top</a></li>
+                <li><a href="#Survey">Literature Survey</a></li>
+                <li><a href="#Gap">Research Gap</a></li>
+                <li><a href="#Objectives">Research Objectives</a></li>
+                <li><a href="#Methodology">Methodology </a></li>
+                <li><a href="#Technologies">Technologies Used</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- end top -->
+  </header>
+
+  <section id="intro">
+    <div class="slogan">
+      <div class="icon">
+        <i class="icon-road icon-10x"></i>
+      </div>
+      <h1><span>Scope</span> of the Research Project</h1>
+    </div>
+  </section>
+
+
+  <section id="Survey" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="heading">
+            <h3><span>Literature Survey</span></h3>
+          </div>
+          <div class="sub-heading">
+            <p>
+              Literature Survey conducted by the HardnBot team
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p>
+            Although there are vulnerability scanners which has the capability of scanning operating system compliance failures and although they can classify vulnerabilities according to the CVE scores provided by the NVD, they are not capable of providing classification for those identified compliance failures but only whether they are failed or passed. Ratsameetip Wita and Yunyong Teng-Amnuay of Department of Computer Engineering, Chulalongkorn University, Bangkok, Thailand published a research paper in 2005 on “Vulnerability Profile for Linux”. In this research, they talk about profiling identified vulnerabilities according to the CVE score of them. In their classification scheme, they consider four types of classification schemes namely,<br>
+            <ol>
+              <li>Confidentiality violation</li>
+              <li>Integrity violation</li> 
+              <li>Availability violation</li> 
+              <li>System compromised</li>
+            </ol>
+            If a confidentiality violation occurs, it allows an attack to directly steal information from the system. Integrity violations allows an attack to directly change the information passing through the system. Availability violation results an attack that limit the genuine access to a genuine user (human or machine), Denial of service attacks (DOS) can be taken as an example. According to their research system compromised attacks gives the attacker the privilege to access the system in four different levels such as: run an arbitrary code, elevate privilege, account break-in, and finally root break in which can be the worst-case scenario.  Furthermore, these classifications are again grouped according to the severity level.<br>
+            <img src="assets/img/surv/1.PNG" height="50%" width="50%"><br>
+            Here they are classifying vulnerabilities of the system / server, but we are going to develop a software toolkit that is capable of identify and classify failed compliance issues of a server operating system. 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p>
+            A research conducted by Sonali Patra, N C Naveen, Omkar Prabhakar in 2016 on “An automated approach for mitigating server security issues” describes servers such as mail server, web servers, application server, etc.., store much sensitive information such as project details, media information, personal data, national security-related information, etc.., if such sensitive data gets into wrong hands. Business and the reputation of the organization will be damaged. Therefore, the need to automate security mechanisms to detect, prevent, and protect the server from the attackers. Security policies play an important role in network security and server security. An Automated Approach for Mitigating Server Security Issues proposes a framework that would ease the work of an administrator. It focuses on designing an automated tool that would perform an audit of the servers and check if it is compliant with all the prescribed security policies. As there are multiple platforms upon which the servers run, the tool is designed to adapt to a heterogeneous environment.<br>  
+            In this paper, an automated security tool as in Fig.1 is proposed that would ease the job of an administrator to check if the server complies with all the security policies of the organization. The security policies which were tested included the following, <br>
+            <ol>
+               <li>Checking if the Windows server is running the approved up-to-date anti-malware solution.</li>
+               <li>Checking if the approved antivirus shield is seen in the taskbar for a system running Windows List the version of the Anti-Malware running on the systems for Linux and Windows operating system.</li>
+               <li>Check if any personal removable media present for both Linux and Windows Server, if so list their names and timestamp of the device insertion.</li>
+               <li>List all the security patches applied to the Windows operating system.</li>
+               <li>List the installed versions of software running on the Windows System.</li>
+               <li>Check if the event logs have been enabled or disabled.</li>
+            </ol>
+            <img src="assets/img/surv/2.PNG" height="50%" width="50%"><br>
+            The following basic security steps which have defied in this research are applied in our research too,<br>
+            <ul>
+              <li>Every organization should have their security policies defined.</li> 
+              <li>There should be an apt network protection mechanism such as firewall technology, anti-virus technology, Intrusion Detection System (IDS), Virtual Private Network (VPN), and data encryption technology.</li>  
+              <li>Use of automated tools that would keep track of the server's security policies and their compliance.</li>  
+              <li>Use of secure administration and maintenance processes, which includes application of patches and upgrades, monitoring of all the logs, backing up of the server data, and operating system.</li>  
+              <li>Installation and configuration of a secure operating system and software in the server.</li>  
+              <li>Use of vulnerability scanner to perform security testing. </li> 
+              <li>Malware detection, mainly during the insertion of infected devices through USB.</li>  
+              <li>Configuring access control.</li> 
+            </ul>   
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p>
+            Faraz Shakib, an employee of a Calsoft Private Limited, India and Zoheb Shivani of Pune Institute of Computer Technology, Pune published a research paper in 2006 on “Snapshot service Interface (SSI), a generic snapshot assisted backup framework for Linux”. In there they were talking about an online backup solution called “SSI” for the Linux platform while talking quantitative measure on performance hits incurred due to using SSI framework in lieu of using traditional backup approaches. Mainly SSI is aimed at enterprise-level high-end critical servers (database servers and mail servers) which are providing 24x7 availability. Because that kind of servers doesn’t have any downtime periods, especially when taking the backup and maintenance.<br> 
+            In SSI there are 9 major steps covering the whole process of taking a system backup.<br>
+            <ol>
+             <li>The SSI initiates from requesting SSI based snapshot-assisted backup by the backup application.</li>
+             <li>SSI asks all the registered business applications to get consistent and waits until all of them respond since they need to maintain an availability of their services. Timeout mechanism is there to prevent unwanted SSI waiting.</li>
+             <li>Make business application’s consistent by flushing their buffers.</li>
+             <li>Until the snapshot operation is performed, the application is paused and another timeout mechanism is also available within the business applications to prevent wait forever in case SSI fails to respond.</li>  
+             <li>Write to disk is over and consistent file system is available for use.</li>
+             <li>The snapshot provider is then requested to take the snapshot since the file system is consistence. Then snapshot is take as a volume level snapshot and consistent backup can be extract from it.</li> 
+             <li>The status of the snapshot (succeed or not) returns by the snapshot provider.</li>
+             <li>SSI in turn the status to the backup application.</li>
+             <li>In this step all the business applications are signaled to continue when the file system writes are resumed.</li>
+            </ol>
+            The major benefit of this SSI framework is that business applications can continuously write data while their snapshot assisted backup is taken. <br> 
+            Since the HardnBot is not an online-based tool, the above approach deviates from our process of taking a backup automatically to the external block device. In the other hand, this method is most suitable for critical servers. 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p>
+            <b>Research of Information Security Risk Prediction based on Grey Theory</b><br>
+            Risk prediction is an important part of the information security system. In accordance with the information security risk assessment process and combination of assets, threat, vulnerability and safety control measures, to strengthen the correlation among these factors and make the prediction results more objective for the target, the authors put forward a model based on the combination of the grey theory and analytic network process (ANP) with information security risk prediction. Establish the weight of each risk assessment element through the analytic network process (ANP) by analyzing interdependency and feedback. Finally, set up systematic risk fuzzy comprehensive calculation to process data and build accurate mathematical model by combining with the risk assessment level.<br> 
+            firstly, the authors grasp the development law of information system through the processing of raw data and the establishment of the grey model, and confirm the preliminary scientific 
+            quantitative prediction for the system's future state; Secondly, use the network analysis method of ANP to compare each independent elements, so that the authors are able to calculate the weight value of each risk factor which affects the system security, reorder the weights, and propose more targeted and objective improvement measures; Finally ,combining with the weight value, to analyze risk objects, the authors obtain fuzzy membership matrix of judgment matrix and build the fuzzy mathematical model, calculate the value of the risk factors comprehensively, and treat it as the guidance, so that reliable guarantee for information system security can be provided. The model realized the grey theory prediction model and was applied in the field of information security, calculate accurate comprehensive weights of various risk factors in information system. In the system, internet elements are interdependent and give feedback to each other, thus combining the theory of fuzzy mathematics, satisfying the requirements of the objectivity and complex of information system, forecasting result is scientific and accurate, instructive significance as well.
+          </p>
+        </div>
+      </div>
+      <a href="assets/docs/Survey.pdf#toolbar=0" target="_blank" class="btn btn-primary btn-large e_fadeIn">Read More</a>
+    </div>
+  </section>
+
+
+
+  <section id="Gap" class="section gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="heading">
+            <h3><span>Research Gap</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p>
+            When performing a hardening process, system administrators, network administrators, server custodians or outsourced expertise need to ensure security of the operating system that runs on a server (in our case its unix based servers) database and application because a single mistake can affect the whole production line which the server is in. Even though there are many scanning tools that has the capability of scan a server and identify compliance failures along with the solutions, the solutions are going to apply with a human interaction. So, the probability of mistake occurrence is higher. And manual hardening process consume much more resources such as time, human, cost likewise. As a solution for the lack of resources, organizations are tending to consider about hiring external professionals and assets to perform the hardening task. In a scenario like this, internal critical classified information might have a possible chance to expose via outsourced professionals intentionally or unintentionally and leave the server in a critical position of been hacked or data leaked. And there is a compulsory requirement of the root (administrator) access to the server terminal to scan and perform operating system hardening. Also, the server needs to be temporarily out of live production because operating system hardening cannot be performed while the server is in live production environment. So, when a critical day-to-day serving server is downed for maybe more than six hours to perform operating system hardening, it will be a critical impact on the organization’s day-to-day business activities. <br><br>
+            As an example, for all these above described scenarios, we can consider an operating system hardening process of a card server of a commercial bank that provides customers with all kind of credit and debit card services. Since the hardening is done by outsourced professionals and a down time is required, all servers information are available to outsourced personals that include customer card details as well as the server details such as the root password and also because of the downtime required, legitimate customer services will be down. So, in a case like this it will be a critical situation to the organization. Likewise, there are more drawbacks to a manual operating system hardening process. <br><br>
+            To solve these types of difficulties and prevent intentional and unintentional human errors, we are going to implement a software platform (HardnBot) which automate the server operating system hardening process and which has the capability of detect failed compliances, classify them based on their criticality/severity levels and apply industry recommended best fixes for them via CIS benchmarks or via organizational requirements. And, there is no system implemented that has the capability of scan a linux server for any compliance failures and to classify them according to a criticality level. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="Objectives" class="section gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="heading">
+            <h3><span>Research Objectives</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="sub-heading">
+            <p>
+              <b>Main Objectives</b> 
+            </p>
+          </div>
+          <p>
+            This research aims to find an effective way to secure the datacenter Red Hat Enterprise Linux version 6, 7, and CentOS version 7, 6 servers and enhance productivity for the customers and employees with a low cost and few human interactions. Hence there is no fully automated hardening platform implemented yet, in this system implementation a novel automated open-source software is proposed.<br><br>
+            Here fully automated free open source hardening platform is developed with the capability to detect poor or non-compliant configurations in a system (OS/DB/Application) and applying industry recommended fixes/configurations and secure systems by reducing its surface of vulnerabilities.<br><br>
+            This research composes a great business value as it can cover 90% of an Information Systems Audit and hardening process. For internal audits, this software presents both opportunity and responsibility. By helping the organization understand and control risks and identifying opportunities/industry best practices to embrace. This software also will allow the internal audit to position themselves as trusted advisors.<br>
+            <ol type="i">
+              <li>Automatically detect failed compliances in a server. </li><br>
+              <li>Automatically classify them according to a criticality level. </li><br>
+              <li>Automatically detect uncompliant configurations of the server. <br>
+                To make these critical servers more secure, this system can automatically perform a dry run feature. With the Dry Run feature, you can execute the playbook without having to make changes on the server. With Ansible Dry Run you can see if the host is getting a configuration changed or not.
+              </li><br>
+              <li>Automated Linux server hardening.<br>
+                To prevent intentional and unintentional human errors, the automated system hardening solution explores and highlights the basic security configurations that should be performed to harden the security posture of a default Linux Operating System installation which can provide you with both scheduled or ad-hoc benchmark tests against CIS standard.
+              </li><br>
+              <li>Bring industry best practices into the system.<br>
+                For a particular parameter in the system configuration, there is an industryrecognized value. For example, a password should expire at most in 90 days. A company may not adhere to these standard values; its security policies may not describe them. On such occasions, system administrators may have assigned them with default values. Through our software, we plan to introduce industry-accepted values and configurations into the information systems.
+              </li><br>
+              <li>Develop an automated backup function.<br>
+                Provide the capability of automatically backup the server which is going to harden. The ultimate goal is to create an automated backup function which will save more time than the manual backup process.
+              </li><br>
+              <li>Develop an intelligence rollback function.<br>
+                Create a function for rollback the server when there are server misconfigurations or abnormal behaviors. Those two parameters supposed to detect automatically and after that user will be able to reset that server misconfigurations or abnormal behaviors through the function. If not, he/she can roll back the server again through the intelligence rollback function.
+              </li><br>
+            </ol>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="sub-heading">
+            <p>
+              <b>Specific objectives</b>  
+            </p>
+          </div>
+          <p>
+            <ol type="i">
+              <li>Reduce manual work<br> 
+                Through this software, we target to reduce the manual effort needed for a complete system hardening. Almost all the parts of the audit and hardening could be performed through this software. Compliance issues are automatically detected. Reports can be generated through this software at the end of the hardening process.
+              </li><br>
+              <li>Ease the internal audit <br>
+                This software is designed in a way that could be easily used by non-technical people. Simple interfaces, pop-up guidelines, and descriptive reports will make the user aware of the functionalities of the software. Even before applying a fix to an issue, the user can read a full detailed report of that issue including its impact and the remediation.<br>
+                This software package can be handled by a single user. Therefore, the entire system's hardening process can be conducted by a single user. This requires a minimal amount of the organization’s resources. As for the internal audit, this software will cover up to 90% of their work.  
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Methodology" class="section gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="heading">
+            <h3><span>Methodology</span></h3>
+          </div>
+          <div class="sub-heading">
+            <p>
+                Methodology behind the HardnBot's functionality
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p>
+            <ol type="1">
+              <li><b>Design formatted configuration libraries/Design Solution structures/libraries.</b><br><br>
+                Formatted configuration libraries contain configurations that should be in a particular operating system or a database. Basically it is a collection of parameters and their industry accepted values. When a user runs the scan, the software will load both system configurations and these formatted configuration libraries into the memory. System configurations will be compared against these configuration libraries. If the system configurations differ from these libraries, they will be identified as misconfigurations. <br>
+                Solution libraries contain the implementation needed to change the detected misconfigurations. It is basically the coding to manipulate system values. When user clicks on the fix button for a particular issue, these libraries will be executed and the scripts on them will fix the related issue. 
+              </li><br><br><br>
+              <li><b>Design OS commands/Queries. </b><br><br>
+                Commands and queries are issued for a particular OS or a database in order to retrieve details of their configuration settings. These commands and queries vary with each OS and database. Therefore, separate sets of commands and queries should be designed and tested prior to the implementation of this audit platform.
+              </li><br><br><br>
+              <li><b>Implement scans to detect non-compliant parameters in OS components.</b><br><br>
+                Then scans will be conducted on OS components to retrieve their existing configurations. Once user run the scan, the software will detect the OS version installed on the host and it will select the relevant set of scripts and queries needed to retrieve the configurations. Then these configurations will be compared against formatted configuration libraries in order to detect misconfigurations.
+              </li><br><br><br>
+              <li><b>Implement backup function.</b><br><br>
+                Existing system configurations should be taken into backups as a precaution if the new configurations failed. For this purpose, scripts will be designed for each OS/DB components. These scripts will generate a single backup file which can be used to restore in case of applied fixes failed.
+              </li><br><br><br>
+              <li><b>Implement Intelligent Rollback function. </b><br><br>
+                Rollback function will take place after the hardening process is done. This function basically depends on the abnormal behaviors of the server which are appearing after the hardening process. In here there are several pre-define behavior models to detect those kind of abnormal behaviors. For that purpose, we create our own models as well as we can use existing models in various tools such as NAGIOS for this task. If those models detect any anomaly regarding to server services, there is a rollback script to run for establishing previous status (backup) of the server and it will automatically run.
+              </li><br><br><br>
+              <li><b>Risk score prediction</b><br><br>
+                Using classified compliance issues, Overall risk score of the server is predicted. For this purpose, it is necessary to implement an algorithm to generate risk score. Using this algorithm HardnBot will predict the likelihood of Impact and probability of occurrence, to implement this algorithm, common probability functions and Bayesian methodology will be used. Potential Risk and Total asset value used to implement the Probability and impact of the risk. Using this method, the asset value to be threaten can be displayed.
+              </li><br><br><br>
+              <li><b>Implement methods to apply fixes. </b><br><br>
+                When user clicks on the fix option for a particular issue, software will load the correct configuration values from solution libraries and these values will be replaced on the detected misconfiguration values. For this purpose, admin privileges will be required from a particular system. Therefore, privilege management will be handled and fixes will be applied one by one, logging every change that this software does to the system.
+              </li><br><br><br>
+              <li><b>Implement follow up sheets to track audit progress. </b><br><br>
+                The follow-up sheets will be used to track the audit progress. For a particular system, a digital follow-up sheet will be generated which contains a checklist to audit that system. User can record the status of the audit in these follow-up sheets and generate a score at the end. These follow-up sheets can be used to identify what parts are successfully configured and what parts left to be configured. These follow-up sheets also provide guidance to audit physical components of a system. This will enable a complete system auditing process. 
+              </li><br><br><br>
+              <li><b>Track performance of applied fixes and logging. </b><br><br>
+                Effectiveness of the applied fixes should be monitored. Because if the new fix causes system to malfunction or it leaves the system vulnerable, the entire audit process will be a failure. Methods will be implemented to track the changes done through this software. Every single change occurred through this software will be logged and this log could be referred to identify any issue arises along with the date, time and user.
+              </li>
+            </ol>
+          </p><br><br>
+          <h2>System Diagram</h2><br>
+          <img src="assets/img/sysds/sysd.png" height="50%" width="50%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Technologies" class="section gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <div class="heading">
+            <h3><span>Technologies Used</span></h3>
+          </div>
+          <div class="sub-heading">
+            <p>
+              Technologies we mostly used in development of HardnBot.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          
+            <h4><b>Main Programming Language: C# </b><br><br></h4>
+            <img src="assets/img/c.PNG" height="20%" width="20%"><br>
+            <p>Almost all operating systems support C# language. C# is a general-purpose, multi-paradigm programming language including strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines. And, C# contains with lots of supporting third party libraries. Therefore, C# will be used as the main programming language to implement this software.</p><br><br>
+            <h4><b>IDE: Visual Studio </b><br><br></h4>
+            <img src="assets/img/visual-studio.png" height="18%" width="18%"><br>
+            <p>Microsoft Visual Studio is an integrated development environment from Microsoft. It is used to develop computer programs, as well as websites, web apps, web services and mobile apps. It mainly supports for C# development and contains lots of features that improve programming experience. And because of the inbuild functions and configurations, we are going to use Microsoft visual studio as our development IDE.</p><br><br>
+            <h4><b>Modern UI Development: Bunifu DLL</b><br><br></h4>
+            <img src="assets/img/bunifu-logo.png" height="40%" width="40%"><br>
+            <p>Bunifu framework is recognized for innovative interface development in C# and C++ environments. Bunifu includes a range of colors and animated controls. It also includes scripts that allows to apply animated effects into the interfaces. Therefore, we will use this framework in designing our interfaces. </p><br><br>
+            <h4><b>Virtual Environment: VMware Workstation</b><br><br></h4>
+            <img src="assets/img/vmw.png" height="40%" width="40%"><br>
+            <p>VMware Workstation is the industry standard for running multiple operating systems as virtual machines (VMs) on a single Linux or Windows PC. As the need we have to run several server-based operating systems to test our product, we will use VMware workstation for run multiple operating systems and observe the product outcomes</p><br><br>
+            <h4><b>Virtual Environment:  Oracle VM VirtualBox </b><br><br></h4>
+            <img src="assets/img/vbox.png" height="30%" width="30%"><br>
+            <p>Oracle VM VirtualBox is a free and open-source hosted hypervisor for x86 visualization. In some cases where we have any difficulties to work with VMware, we will consider using Oracle VM VirtualBox as an alternative.  </p><br><br>
+            <h4><b>Operating System: Linux</b><br><br></h4>
+            <img src="assets/img/LINUX-LOGO.png" height="23%" width="23%"><br>
+            <p>Since our project is targeting linux based systems, we will implement hardening for a series of linux based operating systems as listed below. <br>
+              {RedHat Enterprise Linux 7,  RedHat Enterprise Linux 8, CentOS 7} 
+               </p><br> <br>
+            <h4><b>Operating System: Windows</b><br><br></h4>
+            <img src="assets/img/win10.png" height="18%" width="18%"><br>
+            <p>Microsoft Windows operating systems are the most popular and wide used operating systems in the world. We will use Microsoft windows operating systems to run our IDEs and implement our software. Below listed versions will be used.<br> 
+              {Windows 8.1, Windows 7, Windows 10 version 1903}</p><br> <br>
+            <h4><b>Automation Tool: Ansible </b><br><br></h4>
+            <img src="assets/img/Ansible.png" height="25%" width="25%"><br>
+            <p>Ansible is an open-source software provisioning, configuration management, and applicationdeployment tool. It runs on many Unix-like systems and can configure both Unix-like systems as well as Microsoft Windows. It includes its own declarative language to describe system configuration. We will use ansible to achieve our expected automation hardening process. </p><br> <br>
+            <h4><b>Script Language: Shell</b><br><br></h4>
+            <img src="assets/img/bash-icon.png" height="30%" width="30%"><br>
+            <p>Shell script A shell script is a list of commands (a program) designed to be run by the unix shell. We will use shell script for scanning purposes and other types of command executions in linux servers.</p><br>
+            <h4><b>Terminal emulator: Putty</b><br><br></h4>
+            <img src="assets/img/putty.jpg" height="20%" width="20%"><br>
+            <p>PuTTY is a free and open-source terminal emulator, serial console and network file transfer application. It supports several network protocols, including SCP, SSH, Telnet, rlogin, and raw socket connection. We will use putty for testing purposes and to create connections between servers.  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="verybottom">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="aligncenter">
+              <div class="logo">
+                <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" /></a>
+              </div>
+              <p>
+                &copy; HardnBot - Automated Server Hardening
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+
+  <!-- Javascript Library Files -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.easing.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/parallax/jquery.parallax-1.1.3.js"></script>
+  <script src="assets/js/nagging-menu.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/prettyPhoto/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/portfolio/jquery.quicksand.js"></script>
+  <script src="assets/js/portfolio/setting.js"></script>
+  <script src="assets/js/hover/jquery-hover-effect.js"></script>
+  <script src="assets/js/jquery.scrollTo.min.js"></script>
+  <script src="assets/js/animate.js"></script>
+
+  <!-- Template Custom Javascript File -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
